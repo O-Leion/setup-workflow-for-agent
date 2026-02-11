@@ -15,9 +15,9 @@ Quickly set up an optimized workspace environment for AI agents through an inter
 | **GitHub Copilot**     |  🔲 Planned  | -                                        | `.github/copilot-instructions.md`, etc.   |
 | **Cursor**             |  🔲 Planned  | -                                        | `.cursor/rules/`, etc.                    |
 | **Windsurf (Codeium)** |  🔲 Planned  | -                                        | `.windsurfrules`, etc.                    |
-| **Cline**              |  🔲 Planned  | -                                        | `.clinerules`, etc.                       |
+| **Cline**              | ✅ Supported | [`for_Cline/`](./for_Cline/)             | `.clinerules/` rule management            |
 | **Aider**              |  🔲 Planned  | -                                        | `.aider.conf.yml`, etc.                   |
-| **Roo Code**           |  🔲 Planned  | -                                        | `.roo/rules/`, etc.                       |
+| **Roo Code**           | ✅ Supported | [`for_RooCode/`](./for_RooCode/)         | `.roo/rules/` mode-specific rules         |
 | **Amazon Q Developer** |  🔲 Planned  | -                                        | -                                         |
 
 > 💡 Workflows for additional agents will be added over time. Requests and contributions are welcome!
@@ -33,13 +33,18 @@ Quickly set up an optimized workspace environment for AI agents through an inter
 
 ```text
 .
-├── README.md                 <-- This file (Japanese)
+├── README.md                 <-- Main file (Japanese)
 ├── README_EN.md              <-- English version
 ├── LICENSE
-└── for_antigravity/          <-- Workflows for Google Antigravity
-    ├── README.md             <-- Setup guide (Japanese)
-    ├── README_EN.md          <-- Setup guide (English)
-    └── setup-assistant.md    <-- Workflow file
+├── for_antigravity/          <-- Google Antigravity
+│   ├── README.md / README_EN.md
+│   └── setup-assistant.md
+├── for_Cline/                <-- Cline
+│   ├── README.md / README_EN.md
+│   └── setup-assistant.md
+└── for_RooCode/              <-- Roo Code
+    ├── README.md / README_EN.md
+    └── setup-assistant.md
 ```
 
 ## 🤝 Contributing

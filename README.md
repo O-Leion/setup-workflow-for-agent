@@ -15,9 +15,9 @@
 | **GitHub Copilot**     |  🔲 未対応  | -                                        | `.github/copilot-instructions.md` 等         |
 | **Cursor**             |  🔲 未対応  | -                                        | `.cursor/rules/` 等                          |
 | **Windsurf (Codeium)** |  🔲 未対応  | -                                        | `.windsurfrules` 等                          |
-| **Cline**              |  🔲 未対応  | -                                        | `.clinerules` 等                             |
+| **Cline**              |  ✅ 対応済  | [`for_Cline/`](./for_Cline/)             | `.clinerules/` ルール管理構成                |
 | **Aider**              |  🔲 未対応  | -                                        | `.aider.conf.yml` 等                         |
-| **Roo Code**           |  🔲 未対応  | -                                        | `.roo/rules/` 等                             |
+| **Roo Code**           |  ✅ 対応済  | [`for_RooCode/`](./for_RooCode/)         | `.roo/rules/` モード別ルール構成             |
 | **Amazon Q Developer** |  🔲 未対応  | -                                        | -                                            |
 
 > 💡 対応ワークフローは順次追加予定です。リクエストや貢献を歓迎します！
@@ -34,11 +34,17 @@
 ```text
 .
 ├── README.md                 <-- このファイル
+├── README_EN.md              <-- English version
 ├── LICENSE
-└── for_antigravity/          <-- Google Antigravity用ワークフロー
-    ├── README.md             <-- 導入手順 (日本語)
-    ├── README_EN.md          <-- 導入手順 (English)
-    └── setup-assistant.md    <-- ワークフロー本体
+├── for_antigravity/          <-- Google Antigravity用
+│   ├── README.md / README_EN.md
+│   └── setup-assistant.md
+├── for_Cline/                <-- Cline用
+│   ├── README.md / README_EN.md
+│   └── setup-assistant.md
+└── for_RooCode/              <-- Roo Code用
+    ├── README.md / README_EN.md
+    └── setup-assistant.md
 ```
 
 ## 🤝 コントリビューション
