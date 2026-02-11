@@ -22,11 +22,21 @@ It safely sets up an advanced structure with workspace-wide rules and mode-speci
 
 ## 📦 Installation
 
-### 1. Prerequisites
+Two installation methods are available.
 
-> ⚠️ Roo Code does not have a built-in Global Workflows mechanism. Place this workflow file in the root of your new project and have Roo Code's AI read it to use.
+### Method A: Import as Custom Mode (⭐ Recommended)
 
-### 2. Steps
+Use Roo Code's **custom mode feature** to import once as a global setting, then use it from any project.
+
+1. Download `setup-assistant-export.yaml` from this repository.
+2. Open Roo Code in VS Code.
+3. Click the **⚙️ icon** next to the mode selector → **"Import Modes"**.
+4. Select the downloaded `setup-assistant-export.yaml`.
+5. The "🛠️Setup Assistant" mode will be added.
+6. In a new project, **switch to the "🛠️Setup Assistant" mode** and instruct: "Run setup".
+
+### Method B: Use as Workflow File
+
 1. Open a new project (empty folder) in VS Code.
 2. Place `setup-assistant.md` in the project root.
 3. In Roo Code's chat, enter the following instruction:
